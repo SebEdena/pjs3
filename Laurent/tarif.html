@@ -1,0 +1,204 @@
+<!doctype html>
+<html class="no-js" lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>V-Asie Voyage</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css" media="all">
+</head>
+<body id= "accueil">
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+	<script>
+
+
+	function fctScroll(control){
+		if(control.textContent == "Tarifs"){
+			$('html,body').animate({scrollTop: $("#btn").offset().top}, 1000);
+			control.textContent = "Je remonte !";
+			control.href = "#accueil";
+		} else {
+			$('html,body').animate({scrollTop: $("#accueil").offset().top}, 1000);
+			control.textContent = "Tarifs";
+			control.href = "#btn";
+		}
+	}
+
+	</script>
+
+	<div class="wrapper">
+		<div class="menu">
+			<a href="index.html">
+			<h1>V-Asie Voyage</h1>
+			</a>
+			<div class="nav">
+				<ul>
+					<li><p><a href="#">Fonctionnalités</a></p></li>
+					<li><p><a href="#">Tarifs</a></p></li>
+					<li><p><a href="#">Se connecter</a></p></li>
+				</ul>
+			</div>
+		</div>	
+	</div>
+
+
+
+
+	<img class="banniere" src="img/banniere_asie.jpg">
+
+
+	<button href= "#btn" id ="btn" class="boutondecouverte" onclick="fctScroll(this)">Tarifs</button>
+
+
+				<table id="tarif">
+					<tr>
+						<td>
+							<h2>
+								Chine
+							</h2>
+							<a href="chine.html">
+							<img src="img/chine.jpg">
+							</a>
+						</td>
+						<td>
+							<h2>
+									A partir de 2 000 €
+									
+							</h2>
+							<a href="reservation.php"><button type="POST" class="boutondecouverte" value="Chine">Je réserve !</button></a>
+						</td>
+						<td>
+							<h2>
+								Corée du Sud
+							</h2>
+							<a href="coree.html">
+							<img src="img/seoul.jpg">
+							</a>
+						</td>
+						<td>
+							<h2>
+									A partir de 1 500 €
+									
+							</h2>
+							<a href="reservation.php"><button type="POST" class="boutondecouverte" value="Coree">Je réserve !</button></a>
+						</td>	
+						<td>
+							<h2>
+								Inde
+							</h2>
+							<a href="inde.html">
+							<img src="img/inde.jpg">
+							</a>
+						</td>
+						<td>
+							<h2>
+									A partir de 1 000 €
+									
+							</h2>
+							<a href="reservation.php"><button type="POST" class="boutondecouverte" value="Inde">Je réserve !</button></a>
+						</td>
+					</tr>
+					
+					<tr>
+						<td>
+							<h2>
+								Indonésie
+							</h2>
+							<a href="indonesie.html">
+							<img src="img/indonesie.jpg">
+							</a>
+						</td>
+						<td>
+							<h2>
+									A partir de 900 €
+									
+							</h2>
+							<a href="reservation.php"><button type="POST" class="boutondecouverte" value="Indonesie">Je réserve !</button></a>
+						</td>
+						<td>
+							<h2>
+								Japon
+							</h2>
+							<a href="japon.html">
+							<img src="img/japon.jpg">
+							</a>
+						</td>
+						<td>
+							<h2>
+									A partir de 2 500 €
+									
+							</h2>
+							<a href="reservation.php"><button type="POST" class="boutondecouverte" value="Japon">Je réserve !</button></a>
+						</td>
+						<td>
+							<h2>
+								Malaisie
+							</h2>
+							<a href="malaisie.html">
+							<img src="img/malaisie.jpg">
+							</a>
+						</td>
+						<td>
+							<h2>
+									A partir de 900 €
+									
+							</h2>
+							<a href="reservation.php"><button type="POST" class="boutondecouverte" value="Malaisie">Je réserve !</button></a>
+						</td>	
+					</tr>
+					
+					<tr>
+						<td>
+							<h2>
+								Singapour
+							</h2>
+							<a href="singapour.html">
+							<img src="img/singapour.jpg">
+							</a>
+						</td>
+						<td>
+							<h2>
+									A partir de 1 000 €
+									
+							</h2>
+							<a href="reservation.php"><button type="POST" class="boutondecouverte" value="Singapour">Je réserve !</button></a>
+						</td>
+						<td>
+							<h2>
+								Taiwan
+							</h2>
+							<a href="taiwan.html">
+							<img src="img/taiwan.jpg">
+							</a>
+						</td>
+						<td>
+							<h2>
+									A partir de 1 000 €
+									
+							</h2>
+							<a href="reservation.php"><button type="POST" class="boutondecouverte" value="Taiwan">Je réserve !</button></a>
+						</td>
+						
+						<td>
+							<h2>
+								Thailande
+							</h2>
+							<a href="thailande.html">
+							<img src="img/thailande.jpg">
+							</a>
+						</td>
+						<td>
+							<h2>
+									A partir de 1 000 €
+									
+							</h2>
+							<a href="reservation.php"><button type="POST" class="boutondecouverte" value="Thailande">Je réserve !</button></a>
+						</td>
+					</tr>
+					
+				</table>
+	
+
+
+</body>
+</html>

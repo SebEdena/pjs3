@@ -1,0 +1,149 @@
+<!doctype html>
+<html class="no-js" lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>V-Asie Voyage</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css" media="all">
+</head>
+<body id= "accueil">
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+	<script>
+
+
+	function fctScroll(control){
+		if(control.textContent == "Je découvre !"){
+			$('html,body').animate({scrollTop: $("#btn").offset().top}, 1000);
+			control.textContent = "Je remonte !";
+			control.href = "#accueil";
+		} else {
+			$('html,body').animate({scrollTop: $("#accueil").offset().top}, 1000);
+			control.textContent = "Je découvre !";
+			control.href = "#btn";
+		}
+	}
+
+	</script>
+
+	<div class="wrapper">
+		<div class="menu">
+			<a href="index.html">
+			<h1>V-Asie Voyage</h1>
+			</a>
+			<div class="nav">
+				<ul>
+					<li><p><a href="#">Fonctionnalités</a></p></li>
+					<li><p><a href="tarif.html">Tarifs</a></p></li>
+					<li><p><a href="#">Se connecter</a></p></li>
+				</ul>
+			</div>
+		</div>	
+	</div>
+
+
+
+
+	<img class="banniere" src="img/japon/japon.jpeg">
+
+
+<div class="wrapper">
+
+
+
+	<div class="intro">
+		<p>
+			Ce pays connu sous le nom du pays du soleil levant est une grande île située entre la mer de Chine et de l’océan pacifique. Le Japon a influencé 
+			<br/>le monde par son “soft-power”. Mais, ce pays a une très longue histoire. De Tôkyô, l’une des plus grandes mégapoles du monde, en passant par Kyôto, 
+			<br/>l’ancienne capitale du Japon, ce voyage vous mènera dans l’une des plus puissantes mégalopoles d’Asie. La découverte de la culture japonaise sera 
+			<br/>un tournant dans votre voyage. En effet, cette culture marquera les mémoires des globe-trotteurs.    Depuis Tôkyô, en passant par Kyôto, Osaka, 
+			<br/>ou encore Nagoya, V-Asie Voyage vous propose la découverte de ces 4 villes bien différentes.
+
+
+		</p>
+	</div>
+
+
+	<button href= "#btn" id ="btn" class="boutondecouverte" onclick="fctScroll(this)">Je découvre !</button>
+	
+	
+	<div class="second_ville">
+		<div id="test"> 
+			<nav>
+				<table>
+					<tr>
+						<td>
+								<h2>
+									Kyôto 京都市
+								</h2>
+								<img src="img/japon/kyoto.jpg">
+						</td>
+						<td>
+								<h2>
+									Ancienne capitale du pays, Kyôto n’a que peu changé au cours du temps. Cette ville garde les plus grandes traces d’histoire de tout
+									le pays. Du temple tô-ji, en passant par le temple en or, Kinkaku-ji, la ville nous entraîne dans l’histoire spirituelle du pays.  
+									Il s’agit sans aucun doute de la destination pour découvrir l’Histoire avec un grand H du Japon.
+								</h2>
+						</td>
+						<td>
+								<h2>
+									Nagoya 名古屋市
+								</h2>
+								<img src="img/japon/nagoya.jpg">
+						</td>
+						<td>
+								<h2>
+									Moins célèbre que les autres villes présentées, Nagoya est en réalité, dans tous les films japonais, retrouvée par sa rivière 
+									ntourée de cerisier, Yamazaki. Cette ville est également connue pour sa cuisine locale. Enfin, son château de 7 étages, l’un des premiers 
+									châteaux modernes, saura satisfaire votre soif de culture. Pour les personnes souhaitant découvrir la cuisine japonaise ou encore 
+									un morceau d’histoire du Japon, Nagoya est la ville à visiter. 
+								</h2>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+								<h2>
+									Ôsaka 大阪市
+								</h2>
+								<img src="img/japon/osaka.jpg">
+						</td>
+						<td>
+								<h2>
+									Troisième plus grande ville du Japon, la ville d’Ôsaka est bien différente de la grande métropole. En effet, cette ville est certes moins 
+									connue dans le monde mais elle reste très attractive grâce à son célèbre château, Ösaka-jo. Néanmoins, elle garde une part de modernité 
+									avec l’Universal Studio, ou encore l’aquarium Kaiyukan. Ôsaka est un bon compromis , à mi-chemin entre Tôkyô et Kyôto. 
+								</h2>
+						</td>
+						<td>
+								<h2>
+									Tôkyô 東京 
+								</h2>
+								<img src="img/japon/tokyo.jpg">
+						</td>
+						<td>
+								<h2>
+									La plus grande métropole japonaise mais aussi la capitale du pays du soleil levant, est l’une des destinations les plus importantes 
+									pour les touristes du monde. La ville vous fera voyager dans le temps. Des temples bouddhistes et shintoïstes, en passant par le 
+									quartier dynamique de Shibuya et le marché au poisson de Tsukiji, ou encore la mairie, Tôkyô est la destination de choix pour apprendre 
+									la culture japonaise mais aussi pour apercevoir l’image du Japon, le mont Fuji.    
+								</h2>
+						</td>		
+					</tr>
+				</table>
+			</nav> 
+
+		</div>
+	</div>
+
+
+</div>	
+
+<footer>
+    <form action="tarif.html">
+    <button href= "./tarif.html" id ="btn" class="boutondecouverte">Je réserve !</button>
+    </form>
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,161 @@
+<!doctype html>
+<html class="no-js" lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>V-Asie Voyage</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css" media="all">
+</head>
+<body id= "accueil">
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+	<script>
+
+
+	function fctScroll(control){
+		if(control.textContent == "Je découvre !"){
+			$('html,body').animate({scrollTop: $("#btn").offset().top}, 1000);
+			control.textContent = "Je remonte !";
+			control.href = "#accueil";
+		} else {
+			$('html,body').animate({scrollTop: $("#accueil").offset().top}, 1000);
+			control.textContent = "Je découvre !";
+			control.href = "#btn";
+		}
+	}
+
+	</script>
+
+	<div class="wrapper">
+		<div class="menu">
+			<h1>V-Asie Voyage</h1>
+			<div class="nav">
+				<ul>
+					<li><p><a href="#">Fonctionnalités</a></p></li>
+					<li><p><a href="tarif.html">Tarifs</a></p></li>
+					<li><p><a href="#">Se connecter</a></p></li>
+				</ul>
+			</div>
+		</div>	
+	</div>
+
+
+
+
+	<img class="banniere" src="img/banniere_asie.jpg">
+
+<div class="wrapper">
+
+
+
+	<div class="intro">
+		<p>
+			L’originalité de nos offres se trouvent dans notre choix de lieu l’asie de l’est. Nous vous proposons des offres spécifiques de ce continent attractif. <br />Depuis l’empire du milieu (la Chine), en passant par le pays du soleil levant (le Japon) ou encore les 4 dragons (Corée du Sud, Taiwan, Singapour et Hong Kong),<br /> V-Asie Voyage est l’agence de voyage qui exaucera votre rêve de voyager dans l’asie de l’est. Avec nos spécialiste de voyage, nous vous proposons un large panorama de l’asie.
+
+		</p>
+	</div>
+
+
+	<button href= "#btn" id ="btn" class="boutondecouverte" onclick="fctScroll(this)">Je découvre !</button>
+
+
+	<div class="second">
+		<div id="test"> 
+			<nav>
+				<table>
+
+					<tr>
+						<td>
+							<a href="chine.html">
+								<h2>
+									Chine
+								</h2>
+								<img src="img/chine.jpg">
+							</a>
+						</td>
+						<td>
+							<a href="coree.html">
+								<h2>
+									Corée du Sud
+								</h2>
+								<img src="img/Seoul.jpg">
+							</a>
+						</td>
+						<td>
+							<a href="inde.html">
+								<h2>
+									Inde
+								</h2>
+								<img src="img/inde.jpg">
+							</a>
+						</td>
+					</tr>
+
+
+					<tr>
+						<td>
+							<a href="indonesie.html">
+								<h2>
+									Indonésie
+								</h2>
+								<img src="img/indonesie.jpg">
+							</a>
+						</td>
+						<td>
+							<a href="japon.html">
+								<h2>
+									Japon
+								</h2>
+								<img src="img/japon.jpg">
+							</a>
+						</td>
+						<td>
+							<a href="malaisie.html">
+								<h2>
+									Malaisie
+								</h2>
+								<img src="img/malaisie.jpg">
+							</a>
+						</td>			
+					</tr>
+					<tr>
+						<td>
+							<a href="singapour.html">
+								<h2>
+									Singapour
+								</h2>
+								<img src="img/singapour.jpg">
+							</a>
+						</td>
+						<td>
+							<a href="taiwan.html">
+								<h2>
+									Taiwan
+								</h2>
+								<img src="img/taiwan.jpg">
+							</a>
+						</td>
+						<td>
+							<a href="thailande.html">
+								<h2>
+									Thailande
+								</h2>
+								<img src="img/thailande.jpg">
+							</a>
+						</td>			
+					</tr>
+				</table>
+			</nav> 
+
+		</div>
+	</div>
+
+
+</div>	
+
+
+
+
+
+</body>
+</html>

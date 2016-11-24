@@ -1,0 +1,136 @@
+<!doctype html>
+<html class="no-js" lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>V-Asie Voyage</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css" media="all">
+</head>
+<body id= "accueil">
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+	<script>
+
+
+	function fctScroll(control){
+		if(control.textContent == "Je découvre !"){
+			$('html,body').animate({scrollTop: $("#btn").offset().top}, 1000);
+			control.textContent = "Je remonte !";
+			control.href = "#accueil";
+		} else {
+			$('html,body').animate({scrollTop: $("#accueil").offset().top}, 1000);
+			control.textContent = "Je découvre !";
+			control.href = "#btn";
+		}
+	}
+
+	</script>
+
+	<div class="wrapper">
+		<div class="menu">
+			<a href="index.html">
+			<h1>V-Asie Voyage</h1>
+			</a>
+			<div class="nav">
+				<ul>
+					<li><p><a href="#">Fonctionnalités</a></p></li>
+					<li><p><a href="tarif.html">Tarifs</a></p></li>
+					<li><p><a href="#">Se connecter</a></p></li>
+				</ul>
+			</div>
+		</div>	
+	</div>
+
+
+
+
+	<img class="banniere" src="img/inde/indeBanner.jpg">
+
+
+<div class="wrapper">
+
+
+
+	<div class="intro">
+		<p>
+			Et si vous alliez faire un tour du côté de la plus grande démocratie du monde ? Mélange culturel inégalé, l’Inde impressionne autant par ses 
+			<br/>proportions démesurées que par sa variété culturelle et de population. Venez y découvrir une culture impressionnante de caractère, enrichie de 
+			<br/>musique, de religion et de tradition. Des palais de maharadjahs aux sites archéologiques, l’Inde dispose également de centaines de monuments à 
+			<br/>visiter pour les friands d’histoire. Lieu idéal pour y bouleverser tous ses codes et ses repères, l’Inde est une expérience renversante et surprenante.
+		</p>
+	</div>
+
+
+	<button href= "#btn" id ="btn" class="boutondecouverte" onclick="fctScroll(this)">Je découvre !</button>
+
+
+	<div class="second_ville">
+		<div id="test"> 
+			<nav>
+				<table>
+					<tr>
+						<td>
+								<h2>
+									Bombay
+								</h2>
+								<img src="img/inde/bombay.jpg">
+						</td>
+						<td>
+								<h2>
+									Située dans l’Ouest du pays, cette ville est connue pour son studio de cinéma indien, Bollywood. Pourtant, Bombay (ou Mumbai) 
+									est connue pour ses monuments célèbres comme La porte de l’Inde, sa gare ferroviaire Chhatrapati Shivaji Terminus (anciennement 
+									gare Victoria), ou encore la mosquée Haji Ali Dargah. 
+								</h2>
+						</td>
+						<td>
+								<h2>
+									New Delhi
+								</h2>
+								<img src="img/inde/newdelhi.jpg">
+						</td>
+						<td>
+								<h2>
+									Capitale de l’Inde, Delhi est l’une de ses plus grandes villes. Située dans le nord du pays, Delhi est connue pour ses monuments 
+									dont l’architecture est très spéciale. C’est dans cette ville qu’on pourra visiter le Fort Rouge, le minaret indien Qûtb Minâr, 
+									le tombeau de Humayun ou encore le temple Akshardham. Delhi est en somme la destination de choix de l’histoire indienne.   
+								</h2>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+								<h2>
+									Pondichery
+								</h2>
+								<img src="img/inde/pondichery.jpg">
+						</td>
+						<td>
+								<h2>
+									Cette ville située au sud de l’Inde a gardé beaucoup de traces d’histoire coloniale. Elle fut le premier comptoir français en Inde. 
+									La ville a gardé des plaques de rue écrites en français. Mais Pondichéry a encore d’autres merveilles. On peut mentionner la cathédrale 
+									de l’immaculée Conception ou encore la plage de Pondichéry. Ville la plus française d’Inde, Pondichéry est un étonnant mélange de 
+									dépaysement et de tradition colonialiste.
+								</h2>
+						</td>		
+					</tr>
+				</table>
+			</nav> 
+
+		</div>
+	</div>
+
+
+</div>	
+
+
+
+
+<footer>
+    <form action="tarif.html">
+    <button href= "./tarif.html" id ="btn" class="boutondecouverte">Je réserve !</button>
+    </form>
+</footer>
+
+</body>
+
+</html>

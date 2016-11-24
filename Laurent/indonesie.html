@@ -1,0 +1,119 @@
+<!doctype html>
+<html class="no-js" lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>V-Asie Voyage</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css" media="all">
+</head>
+<body id= "accueil">
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+	<script>
+
+
+	function fctScroll(control){
+		if(control.textContent == "Je découvre !"){
+			$('html,body').animate({scrollTop: $("#btn").offset().top}, 1000);
+			control.textContent = "Je remonte !";
+			control.href = "#accueil";
+		} else {
+			$('html,body').animate({scrollTop: $("#accueil").offset().top}, 1000);
+			control.textContent = "Je découvre !";
+			control.href = "#btn";
+		}
+	}
+
+	</script>
+
+	<div class="wrapper">
+		<div class="menu">
+			<a href="index.html">
+			<h1>V-Asie Voyage</h1>
+			</a>
+			<div class="nav">
+				<ul>
+					<li><p><a href="#">Fonctionnalités</a></p></li>
+					<li><p><a href="tarif.html">Tarifs</a></p></li>
+					<li><p><a href="#">Se connecter</a></p></li>
+				</ul>
+			</div>
+		</div>	
+	</div>
+
+
+
+
+	<img class="banniere" src="img/indonesie/indonesieBanner.jpg">
+
+
+<div class="wrapper">
+
+
+
+	<div class="intro">
+		<p>
+			Plus grand archipel du monde et comprenant plus de 17 000 îles, l’Indonésie est une mosaïque de cultures et de religions. Plus grand pays 
+			<br/>musulman au monde, les chrétiens, bouddhistes ou encore hindouistes s’y côtoient partout. L’indonésie est un pays à la nature incroyable et 
+			<br/>puissante, entre les îles indénombrables dans les eaux de l’Océan Indien, et les jungles où vivent des tigres, serpents et éléphants. 
+			<br/>Les célèbres montagnes volcaniques de Java ne décevront pas le touriste faisant le déplacement, fortes de paysages incroyables. Véritable 
+			<br/>invitation au dépaysement, l’Indonésie est un paradis tropical qui saura vous montrer la force et la diversité de la nature. 
+		</p>
+	</div>
+
+
+	<button href= "#btn" id ="btn" class="boutondecouverte" onclick="fctScroll(this)">Je découvre !</button>
+	
+	
+	<div class="second_ville">
+		<div id="test"> 
+			<nav>
+				<table>
+					<tr>
+						<td>
+								<h2>
+									Bali
+								</h2>
+								<img src="img/indonesie/bali.jpg">
+						</td>
+						<td>
+								<h2>
+									Paradis touristique, la petite île de Bali attire les visiteurs, par ses plages magnifiques, mais également par ses reliefs volcaniques 
+									et ses rizières traditionnelles. Malgré l’omniprésence touristique, l’île conserve sa tradition locale forte qui fait tout le charme du 
+									lieu. Véritable vitrine de tout ce que l’Indonésie offre de plus beau, Bali saura vous émerveiller, et vous faire redécouvrir la nature.
+								</h2>
+						</td>
+						<td>
+								<h2>
+									Jakarta 	
+								</h2>
+								<img src="img/indonesie/jakarta.jpg">
+						</td>
+						<td>
+								<h2>
+									Ville très encombrée et première agglomération d’Asie du Sud Est, Jakarta fait se côtoyer les meilleurs et les pires aspects 
+									d’une capitale asiatique. Cependant elle est pour le touriste étranger une destination de choix pour les amateurs d’intensité 
+									et de vie, et propose de grands centres commerciaux, tout comme des édifices religieux imposants et spectaculaires. Il sera possible 
+									de visiter de nombreux centres artistiques, ainsi que le Taman Mini Indonesia Indah, un parc culturel pour le touriste qui veut découvrir le pays.
+								</h2>
+						</td>
+					</tr>
+
+				</table>
+			</nav> 
+
+		</div>
+	</div>
+
+
+</div>	
+
+<footer>
+    <form action="tarif.html">
+    <button href= "./tarif.html" id ="btn" class="boutondecouverte">Je réserve !</button>
+    </form>
+</footer>
+
+</body>
+
+</html>

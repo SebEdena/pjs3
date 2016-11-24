@@ -1,0 +1,156 @@
+<!doctype html>
+<html class="no-js" lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>V-Asie Voyage</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css" media="all">
+</head>
+<body id= "accueil">
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+	<script>
+
+
+	function fctScroll(control){
+		if(control.textContent == "Je découvre !"){
+			$('html,body').animate({scrollTop: $("#btn").offset().top}, 1000);
+			control.textContent = "Je remonte !";
+			control.href = "#accueil";
+		} else {
+			$('html,body').animate({scrollTop: $("#accueil").offset().top}, 1000);
+			control.textContent = "Je découvre !";
+			control.href = "#btn";
+		}
+	}
+
+	</script>
+
+	<div class="wrapper">
+		<div class="menu">
+			<a href="index.html">
+			<h1>V-Asie Voyage</h1>
+			</a>
+			<div class="nav">
+				<ul>
+					<li><p><a href="#">Fonctionnalités</a></p></li>
+					<li><p><a href="tarif.html">Tarifs</a></p></li>
+					<li><p><a href="#">Se connecter</a></p></li>
+				</ul>
+			</div>
+		</div>	
+	</div>
+
+
+
+
+	<img class="banniere" src="img/Chine/ChineBanner.jpg">
+
+<div class="wrapper">
+
+
+
+	<div class="intro">
+		<p>
+			La Chine (officiellement République Populaire de Chine), est le pays le plus peuplé du monde. Foyer d’une des plus anciennes civilisations du monde, 
+			<br/>la Chine est un vaste territoire, remplie de destinations variées et fascinantes. De la Grande Muraille aux grandes métropoles modernes, 
+			<br/>le pays offre une porte incroyable sur l’histoire, mais également un grand panorama du monde contemporain. L’empire du milieu offre des dizaines 
+			<br/>de lieux culturels majeurs : Cité interdite, Place Tian’anmen, Shanghai Tower… Nous vous proposons de découvrir 4 des plus incroyables villes du pays, 
+			<br/>au carrefour du progrès technique et de la culture traditionnelle chinoise.
+
+		</p>
+	</div>
+
+
+	<button href= "#btn" id ="btn" class="boutondecouverte" onclick="fctScroll(this)">Je découvre !</button>
+
+
+	<div class="second_ville">
+		<div id="test"> 
+			<nav>
+				<table>
+					<tr>
+						<td>
+							<h2>
+								Beijing 北京
+							</h2>
+							<img src="img/chine/beijing.jpg">
+						</td>
+						<td>
+							<h2>
+									Centre culturel du pays, et capitale à la réputation mondiale, 
+									Beijing offre de très nombreuses attractions touristiques. 
+									Vous pourrez y découvrir l’architecture chinoise traditionnelle, 
+									en passant par les temples et les jardins impériaux, 
+									la ville saura satisfaire n’importe quel touriste avide d’histoire et de beauté. 
+									Également grand centre économique, Beijing offre ainsi des quartiers commerciaux attractifs et variés.
+							</h2>
+
+						</td>
+						<td>
+								<h2>
+									Guangzhou 广州
+								</h2>
+								<img src="img/chine/guangzhou.jpg">
+						</td>
+						<td>
+								<h2>
+									Moins connue que les trois autres villes, Guangzhou est pourtant 
+									une des grandes villes de la région du sud de la Chine. 
+									La ville ne cesse de croître depuis plusieurs années. Pour autant, 
+									la ville garde une certaine part d’histoire qui reste très importante. 
+									Depuis la montagne Baiyun en passant par le temple des six banians, 
+									Guangzhou est une ville moins connue du monde à découvrir.   
+								</h2>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+								<h2>
+									Hong Kong 香港
+								</h2>
+								<img src="img/chine/hongkong.jpg">
+						</td>
+						<td>
+								<h2>
+									Ancienne colonie anglaise, la ville de Hong Kong est devenue 
+									une grande puissance économique de la Chine. Depuis le centre de Hong Kong 
+									en passant par l’île de Cheung Chau ou encore le quartier de Sai Kung, 
+									cette ville regroupe à la fois le paysage urbain qui ne cesse de grandir 
+									au fur et à mesure du temps, et le paysage de campagne. 
+								</h2>
+						</td>
+						<td>
+								<h2>
+									Shanghai 上海
+								</h2>
+								<img src="img/chine/shanghai.jpg">
+						</td>
+						<td>
+								<h2>
+									Capitale économique de la Chine, Shanghai est une ville qui arrive 
+									à faire nuancer le paysage urbain mais aussi le paysage de la chine traditionnelle. 
+									Depuis le jardin YuYuan en passant la perle de l’orient (la tour de télévision), 
+									Shanghai est une destination à ne pas rater sous aucun prétexte.
+								</h2>
+						</td>		
+					</tr>
+				</table>
+			</nav> 
+
+		</div>
+	</div>
+
+
+</div>	
+
+
+
+<footer>
+    <form action="tarif.html">
+    <button href= "./tarif.html" id ="btn" class="boutondecouverte">Je réserve !</button>
+    </form>
+</footer>
+</body>
+</html>

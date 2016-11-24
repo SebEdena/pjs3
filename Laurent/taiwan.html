@@ -1,0 +1,74 @@
+<!doctype html>
+<html class="no-js" lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>V-Asie Voyage</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css" media="all">
+</head>
+<body id= "accueil">
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+	<script>
+
+
+	function fctScroll(control){
+		if(control.textContent == "Je découvre !"){
+			$('html,body').animate({scrollTop: $("#btn").offset().top}, 1000);
+			control.textContent = "Je remonte !";
+			control.href = "#accueil";
+		} else {
+			$('html,body').animate({scrollTop: $("#accueil").offset().top}, 1000);
+			control.textContent = "Je découvre !";
+			control.href = "#btn";
+		}
+	}
+
+	</script>
+
+	<div class="wrapper">
+		<div class="menu">
+			<a href="index.html">
+			<h1>V-Asie Voyage</h1>
+			</a>
+			<div class="nav">
+				<ul>
+					<li><p><a href="#">Fonctionnalités</a></p></li>
+					<li><p><a href="tarif.html">Tarifs</a></p></li>
+					<li><p><a href="#">Se connecter</a></p></li>
+				</ul>
+			</div>
+		</div>	
+	</div>
+
+
+
+
+	<img class="banniere" src="img/taiwan/taiwanBanner.jpg">
+
+
+<div class="wrapper">
+
+
+
+	<div class="intro">
+		<p>
+			Foyer de technologie, Taiwan est une île aux multiples facettes surprenantes. Taiwan est un espace mondialement reconnu pour son développement 
+			<br/>moderne et impressionnant, et un centre du progrès mondial. Cependant, de manière moins célèbre, l’île de Taiwan est majoritairement remplie de 
+			<br/>végétation, et une chaîne de montagne imposante, comportant des dizaines de sommets incroyables, s’étend d’un bout à l’autre du territoire.
+			<br/>Entre une côte Ouest moderne et rythmée à cent à l’heure, et une côte Est bordée de surprenants visages traditionnels, Taiwan saura vous faire 
+			<br/>découvrir son littoral et ses falaises. Que vous vouliez découvrir la modernité de la célèbre tour Taipei 101, ou des terres sauvages et 
+			<br/>montagneuses au relief splendide, Taiwan est une destination pour vous.  
+		</p>
+	</div>
+
+</div>	
+
+<footer>
+    <form action="tarif.html">
+    <button href= "./tarif.html" id ="btn" class="boutondecouverte">Je réserve !</button>
+    </form>
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!doctype html>
+<html class="no-js" lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>V-Asie Voyage</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css" media="all">
+</head>
+<body id= "accueil">
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+	<script>
+
+
+	function fctScroll(control){
+		if(control.textContent == "Je découvre !"){
+			$('html,body').animate({scrollTop: $("#btn").offset().top}, 1000);
+			control.textContent = "Je remonte !";
+			control.href = "#accueil";
+		} else {
+			$('html,body').animate({scrollTop: $("#accueil").offset().top}, 1000);
+			control.textContent = "Je découvre !";
+			control.href = "#btn";
+		}
+	}
+
+	</script>
+
+	<div class="wrapper">
+		<div class="menu">
+			<a href="index.html">
+			<h1>V-Asie Voyage</h1>
+			</a>
+			<div class="nav">
+				<ul>
+					<li><p><a href="#">Fonctionnalités</a></p></li>
+					<li><p><a href="tarif.html">Tarifs</a></p></li>
+					<li><p><a href="#">Se connecter</a></p></li>
+				</ul>
+			</div>
+		</div>	
+	</div>
+
+
+
+
+	<img class="banniere" src="img/singapour/singapourBanner.jpg">
+
+
+<div class="wrapper">
+
+
+
+	<div class="intro">
+		<p>
+			Ancienne colonie britannique, la ville-état de Singapour est devenu un des carrefours majeurs des échanges mondiaux, et des civilisations ! Elle regroupe 
+			<br/>des influences européennes, indiennes, malaises et chinoises. Symbole de modernité en Asie, elle garde tout de même des bâtiments plus anciens 
+			<br/>aux influences étrangères en bordure de la ville. Avec des lois très strictes, c’est un espace urbain d’une propreté quasiment exemplaire. De nuit, 
+			<br/>c’est une tout autre ville qui s’anime, avec sa magnifique skyline dans la célèbre Marina Bay, que vous apprécierez encore mieux en haut de la plus 
+			<br/>haute roue du monde, la Singapore Flyer, qui s’élève à 165 mètres ! Vous pourrez aussi visiter les deux zoos de la ville, le Singapore Zoo, et le Night 
+			<br/>Safari, qui comme son nom l’indique, vous accueillera la nuit ! Ils possèdent des animaux de toute l’Asie comme les très rares tigres blanc.
+		</p>
+	</div>
+
+</div>	
+
+<footer>
+    <form action="tarif.html">
+    <button href= "./tarif.html" id ="btn" class="boutondecouverte">Je réserve !</button>
+    </form>
+</footer>
+
+</body>
+
+</html>

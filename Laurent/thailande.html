@@ -1,0 +1,150 @@
+<!doctype html>
+<html class="no-js" lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>V-Asie Voyage</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css" media="all">
+</head>
+<body id= "accueil">
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+	<script>
+
+
+	function fctScroll(control){
+		if(control.textContent == "Je découvre !"){
+			$('html,body').animate({scrollTop: $("#btn").offset().top}, 1000);
+			control.textContent = "Je remonte !";
+			control.href = "#accueil";
+		} else {
+			$('html,body').animate({scrollTop: $("#accueil").offset().top}, 1000);
+			control.textContent = "Je découvre !";
+			control.href = "#btn";
+		}
+	}
+
+	</script>
+
+	<div class="wrapper">
+		<div class="menu">
+			<a href="index.html">
+			<h1>V-Asie Voyage</h1>
+			</a>
+			<div class="nav">
+				<ul>
+					<li><p><a href="#">Fonctionnalités</a></p></li>
+					<li><p><a href="tarif.html">Tarifs</a></p></li>
+					<li><p><a href="#">Se connecter</a></p></li>
+				</ul>
+			</div>
+		</div>	
+	</div>
+
+
+
+
+	<img class="banniere" src="img/thailande/thailandeBanner.jpg">
+
+<div class="wrapper">
+
+
+
+	<div class="intro">
+		<p>
+			Une des destinations de voyage les plus prisées des touristes dans le monde, la Thaïlande offre de nombreux atouts incroyables à ses visiteurs. 
+			<br/>Pays à la géographie exceptionnelle, il est facile d’y trouver des plages inégalées dans le monde, au sable parfaitement fin et à la mer claire 
+			<br/>comme le cristal. Cependant, loin de se contenter de plages de rêve, la Thaïlande est un concentré de paysages splendides et de sites historiques 
+			<br/>exceptionnels. Si l’envie vous prend de découvrir une culture ancrée dans le bouddhisme, le bien nommé pays du sourire est une destination de choix. 
+			<br/>Incroyablement riche et variée, la Thaïlande va vous surprendre, par sa cuisine traditionnelle à sa culture spirituelle.
+		</p>
+	</div>
+
+
+	<button href= "#btn" id ="btn" class="boutondecouverte" onclick="fctScroll(this)">Je découvre !</button>
+
+
+	<div class="second_ville">
+		<div id="test"> 
+			<nav>
+				<table>
+					<tr>
+						<td>
+							<h2>
+								Bangkok
+							</h2>
+							<img src="img/thailande/bangkok.jpg">
+						</td>
+						<td>
+								<h2>
+									Bangkok est officiellement la ville portant le nom le plus long du monde en thaï. Haut lieu du bouddhisme, elle comporte aussi 
+									d’autres religions, mais présente par ses nombreux temples au style incomparable des matériaux nobles : pierres précieuses, marbre…
+									N’hésitez pas à les visiter, notamment le Wat Pho et son Bouddha couché, le Wat Arun et le Wat Saket. Le palais royal est lui aussi 
+									imprégné d’une architecture particulière, et en fait une destination spectaculaire. 
+								</h2>
+						</td>
+						<td>
+								<h2>
+									Krabi
+								</h2>
+								<img src="img/thailande/krabi.jpg">
+						</td>
+						<td>
+								<h2>
+									Si vous préférez les activités dans la nature plutôt que de visiter une ville bondée, Krabi est une ville faite pour vous. Au menu, 
+									de nombreuses attractions : des centaines d’îles, des parcs nationaux emplis de calme, ou encore du kayak. Il faudra tout de même 
+									visiter le temple de la Grotte du Tigre, construit dans une grotte calcaire, et en prime, si vous avez le courage de monter ses 1237 
+									marches, vous atteindrez une esplanade avec une vue à couper le souffle.
+								</h2>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+								<h2>
+									Pattaya
+								</h2>
+								<img src="img/thailande/pattaya.jpg">
+
+						</td>
+						<td>
+
+								<h2>
+									La ville est une station balnéaire située sur le Golfe de Thaïlande. Ancien village de pêcheurs, la ville est majoritairement 
+									occupée par les touristes qui y viennent. Il faudra aller voir le Sanctuaire de la Vérité, les nombreux zoos spécialisés, 
+									comme le Underwater World et son immense tunnel en verre sous l’aquarium. Vous pourrez aussi vous balader sur la Beach Road ou 
+									pratiquer les nombreux sports de la ville.
+								</h2>
+						</td>
+						<td>
+								<h2>
+									Phuket
+								</h2>
+								<img src="img/thailande/phuket.jpg">
+
+						</td>
+						<td>
+								<h2>
+									Cette ville se situe sur la magnifique baie de Phuket aux eaux très claires. Vous pourrez vous promener dans Phuket Ville avec 
+									ses activités multiples et variées, faire une croisière sur un bateau traditionnel entre les îles de la baie, visiter le marché 
+									de Rawai, observer des éléphants ou encore voir le Big Bouddha et admirer les caps et points de vue environnants.
+								</h2>
+						</td>		
+					</tr>
+				</table>
+			</nav> 
+
+		</div>
+	</div>
+
+
+</div>	
+
+<footer>
+    <form action="tarif.html">
+    <button href= "./tarif.html" id ="btn" class="boutondecouverte">Je réserve !</button>
+    </form>
+</footer>
+
+</body>
+</html>

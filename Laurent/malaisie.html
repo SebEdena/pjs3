@@ -1,0 +1,119 @@
+<!doctype html>
+<html class="no-js" lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>V-Asie Voyage</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css" media="all">
+</head>
+<body id= "accueil">
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+	<script>
+
+
+	function fctScroll(control){
+		if(control.textContent == "Je découvre !"){
+			$('html,body').animate({scrollTop: $("#btn").offset().top}, 1000);
+			control.textContent = "Je remonte !";
+			control.href = "#accueil";
+		} else {
+			$('html,body').animate({scrollTop: $("#accueil").offset().top}, 1000);
+			control.textContent = "Je découvre !";
+			control.href = "#btn";
+		}
+	}
+
+	</script>
+
+	<div class="wrapper">
+		<div class="menu">
+			<a href="index.html">
+			<h1>V-Asie Voyage</h1>
+			</a>
+			<div class="nav">
+				<ul>
+					<li><p><a href="#">Fonctionnalités</a></p></li>
+					<li><p><a href="tarif.html">Tarifs</a></p></li>
+					<li><p><a href="#">Se connecter</a></p></li>
+				</ul>
+			</div>
+		</div>	
+	</div>
+
+
+
+
+	<img class="banniere" src="img/malaisie/malaisieBanner.jpg">
+
+
+<div class="wrapper">
+
+
+
+	<div class="intro">
+		<p>
+			Fantasme de tout explorateur, la nature malaisienne saura surprendre le plus expérimenté des voyageurs. Parsemée de plages de rêves, mais également 
+			<br/>de jungle sauvage, la Malaisie offre à la fois une destination splendide et un rêve d’aventure, pour qui saura apprécier sa chaleur et son humidité 
+			<br/>incroyables. Véritable lieu de mélange à la végétation luxuriante, le pays est peuplé de malais, mais également de chinois et d’indiens. Pays marqué 
+			<br/>par la dualité entre l’Ouest moderne et développé après le colonialisme, et l’Est tropical rempli de culture traditionnelle, de plages de rêves et de maisons sur pilotis, la Malaisie saura surprendre tous les touristes curieux de découvrir cette destination.
+		</p>
+	</div>
+
+
+	<button href= "#btn" id ="btn" class="boutondecouverte" onclick="fctScroll(this)">Je découvre !</button>
+	
+	
+	<div class="second_ville">
+		<div id="test"> 
+			<nav>
+				<table>
+					<tr>
+						<td>
+								<h2>
+									Kuala Lumpur	
+								</h2>
+								<img src="img/malaisie/kualalumpur.jpg">
+						</td>
+						<td>
+								<h2>
+									Une des deux capitales de la Malaisie, Kuala Lumpur est une ville d’envergure mondiale qui possède de nombreux gratte-ciels, 
+									comme les célèbres tours Petronas. La tour Menara vous permet d’observer la ville de haut. Les immanquables sont le Central Market, 
+									le marché des produits frais ainsi que le centre-ville qui est le patrimoine architectural de la ville. Vous pourrez vous reposer 
+									au jardin botanique de Lake Garden.
+								</h2>
+						</td>
+						<td>
+								<h2>
+									Penang Island
+								</h2>
+								<img src="img/malaisie/penang.jpg">
+						</td>
+						<td>
+								<h2>
+									Située au nord Ouest de la Malaisie, L'île de Penang fait nuancer le milieu urbain et le milieu paradisiaque de sa plage. 
+									C’est ici qu’on pourra visiter le temple Bouddhiste Kek Lok Si, le jardin botanique, l’immeuble Gurney Drive (pour le shopping). 
+									L'île de Penang est à visiter pour découvrir ces deux milieux liés.
+								</h2>
+						</td>
+					</tr>
+
+				</table>
+			</nav> 
+
+		</div>
+	</div>
+
+
+</div>	
+
+
+<footer>
+    <form action="tarif.html">
+    <button href= "./tarif.html" id ="btn" class="boutondecouverte">Je réserve !</button>
+    </form>
+</footer>
+
+</body>
+
+</html>

@@ -1,0 +1,119 @@
+<!doctype html>
+<html class="no-js" lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>V-Asie Voyage</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css" media="all">
+</head>
+<body id= "accueil">
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+	<script>
+
+
+	function fctScroll(control){
+		if(control.textContent == "Je découvre !"){
+			$('html,body').animate({scrollTop: $("#btn").offset().top}, 1000);
+			control.textContent = "Je remonte !";
+			control.href = "#accueil";
+		} else {
+			$('html,body').animate({scrollTop: $("#accueil").offset().top}, 1000);
+			control.textContent = "Je découvre !";
+			control.href = "#btn";
+		}
+	}
+
+	</script>
+
+	<div class="wrapper">
+		<div class="menu">
+			<a href="index.html">
+			<h1>V-Asie Voyage</h1>
+			</a>
+			<div class="nav">
+				<ul>
+					<li><p><a href="#">Fonctionnalités</a></p></li>
+					<li><p><a href="tarif.html">Tarifs</a></p></li>
+					<li><p><a href="#">Se connecter</a></p></li>
+				</ul>
+			</div>
+		</div>	
+	</div>
+
+
+
+
+	<img class="banniere" src="img/coree/coreeBanner.jpg">
+
+<div class="wrapper">
+
+
+
+	<div class="intro">
+		<p>
+			Pays à l’histoire traversée par les guerres, la Corée du Sud a su se relever et devenir une destination riche et incroyable. Surtout 
+			<br/>célèbre pour sa capitale Séoul, une grande métropole mondiale, le pays du matin calme offre une découverte de la modernité asiatique 
+			<br/>intense. Au summum de l’avancée technologique, le pays vit à une vitesse effrénée. Il est cependant possible de découvrir l’histoire 
+			<br/>coréenne entre les palais royaux conservés, ou encore les marchés traditionnels. Les monastères bouddhistes sont également une destination 
+			<br/>de choix. Enfin, les montagnes sud-coréennes fascinent par leur grandeur et leurs paysages étonnants.
+		</p>
+	</div>
+
+
+	<button href= "#btn" id ="btn" class="boutondecouverte" onclick="fctScroll(this)">Je découvre !</button>
+	
+	
+	<div class="second_ville">
+		<div id="test"> 
+			<nav>
+				<table>
+					<tr>
+						<td>
+								<h2>
+									Séoul 	
+								</h2>
+								<img src="img/coree/seoul.jpg">
+						</td>
+						<td>
+								<h2>
+									Troisième métropole mondiale, fondée il y a deux mille ans, Séoul est pourtant une capitale dont la modernité est à l’image 
+									de son pays. Derrière ses allures de New York, Séoul cache des palais en état toujours remarquable, ainsi que deux grands 
+									marchés dignes de visite. Vous pourrez également découvrir une vue imprenable de la ville depuis la Namsan Tower qui la surplombe. 
+									Du côté jeune et artistique du quartier de Hongdae, au plus riche et branché quartier Kangnam, en passant par les rues étroites 
+									de Myeondong, le quartier au top de la mode, Séoul est capable de vous faire découvrir tous les aspects d’une métropole moderne.
+								</h2>
+						</td>
+						<td>
+								<h2>
+									Busan
+								</h2>
+								<img src="img/coree/busan.jpg">
+						</td>
+						<td>
+								<h2>
+									Après les tours de Séoul, Busan propose une autre vue sur la Corée, avec des plages remarquables, qui attirent les touristes autant 
+									que les locaux. Ville à l’activité portuaire intense, Busan offre également un marché aux poissons massif, ainsi que des quartiers 
+									éloignés pittoresques aux couleurs aussi variées que resplendissantes, remplies de Street Art, et aux airs de labyrinthes urbains. 
+									Du temple millénaire aux lieux de virées nocturnes, Busan vous offrira également de nombreuses destinations touristiques.
+								</h2>
+						</td>
+					</tr>
+
+				</table>
+			</nav> 
+
+		</div>
+	</div>
+
+
+</div>	
+
+
+<footer>
+    <form action="tarif.html">
+    <button href= "./tarif.html" id ="btn" class="boutondecouverte">Je réserve !</button>
+    </form>
+</footer>
+
+</body>
